@@ -1,0 +1,8 @@
+baseURL = 'https://bisonwallet.org/'
+languageCode = 'en-US'
+title = 'BisonWallet'
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

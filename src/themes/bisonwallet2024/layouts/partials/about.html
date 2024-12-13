@@ -1,0 +1,38 @@
+<div class="container glowborder mt-3">
+    <div class="row">
+        <div class="col col-xs-12 glass m-2 p-5">
+            <a class="navbar-brand" href="https://bisonwallet.org">
+                <img src="/images/bw-logo.svg" class="logo" alt="{{ site.Title }}">
+            </a>
+            <p class="mt-4">Bison Wallet currently supports trading pairs for:</p>
+            <div class="supported no-gutters">
+                <div class="row">
+                    {{ range $.Site.Params.Coins }}
+                    <div class="currency col-6 col-sm-4">
+                        <img src="/images/{{ index . 1 }}">
+                        <span>{{ index . 0 }}</span>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-xs-12 glass m-2 p-5">
+            <h1>Find Out More</h1>
+            <p>Come and help make DCRDEX better, there are many ways to contribute. Join our growing community, where
+                you can connect with developers and other users, get information and ask questions. We can’t wait to
+                meet you! </p>
+
+            <div class="row socials pt-2">
+                {{ range $.Site.Params.Socials }}
+                <div class="col-6">
+                    <a class="social" href="{{ index . 2 }}" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/{{ index . 1 }}">
+                        <div>{{ index . 0 }}</div>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>

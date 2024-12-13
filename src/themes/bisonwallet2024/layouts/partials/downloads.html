@@ -1,0 +1,80 @@
+<div class="container parallax glowborder mb-4">
+    <a name="download"></a>
+    <p class="h1 text-center">Downloads</p>
+    <div class="row justify-content-md-center">
+        <div class="col">
+            <div class="download glass m-2 p-2">
+                <div>
+                    <img src="/images/win-blue.svg">
+                    <span>Windows&nbsp;x64</span>
+                </div>
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.win_bisonw_installer_url }}"
+                        rel="noopener noreferrer">
+                        Installer
+                    </a>
+                    <a class="btn btn-primary" href="{{ $.Site.Params.win_bisonw_binary_url }}"
+                        rel="noopener noreferrer">
+                        Binary (EXE)
+                    </a>
+                    <span>Sorry - no 32-bit</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="download glass m-2 p-2">
+                <div>
+                    <img src="/images/mac-blue.svg">
+                    <span>macOS</span>
+                </div>
+                <div class="d-flex align-items-stretch">
+                    <div class="btn-bg me-1 flex-grow-1 border-end">
+                        <div class="mt-2">Intel / AMD64</div>
+                        <a class="btn btn-primary mt-2"
+                            href="https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-desktop-darwin-amd64-v1.0.2.dmg"
+                            rel="noopener noreferrer">
+                            Installer
+                        </a>
+                        <a class="btn btn-primary"
+                            href="https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-darwin-amd64-v1.0.2.tar.gz"
+                            rel="noopener noreferrer">
+                            Binary
+                        </a>
+                    </div>
+                    <div class="btn-bg ms-1 flex-grow-1">
+                        <div class="mt-2">Apple Silicon / ARM64</div>
+                        <a class="btn btn-primary mt-2" href="{{ $.Site.Params.mac_bisonw_installer_amd_url }}"
+                            rel="noopener noreferrer">
+                            Installer
+                        </a>
+                        <a class="btn btn-primary" href="{{ $.Site.Params.mac_bisonw_binary_amd_url }}"
+                            rel="noopener noreferrer">
+                            Binary
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="download glass m-2 p-2">
+                <div>
+                    <img src="https://dex.decred.org/images/linux-blue.svg">
+                    <span>Linux&nbsp;x64</span>
+                </div>
+
+                <div class="btn-bg">
+                    <a class="btn btn-primary" href="{{ $.Site.Params.lin_bisonw_binary_url }}"
+                        rel="noopener noreferrer">
+                        Binary
+                    </a>
+                    <a class="btn btn-primary" href="{{ $.Site.Params.lin_bisonw_deb_url }}" rel="noopener noreferrer">
+                        Debian Installer
+                    </a>
+                    <a href="{{ $.Site.Params.lin_bisonw_arm_url }}" rel="noopener noreferrer">
+                        Need ARM?
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

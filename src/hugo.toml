@@ -1,0 +1,70 @@
+baseURL = "https://bisonwallet.org/"
+languageCode = "en-us"
+title = "BisonWallet"
+theme = "bisonwallet2024"
+relativeURLS = true
+
+[module]
+  [[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
+
+
+[params]
+  # Site image and description used to populate og tags.
+  description = "Bison Wallet is an open source, peer-to-peer cryptocurrency exchange built by the Decred Project."
+
+  # Bison Wallet URLs
+  win_bisonw_installer_url      = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-desktop-windows-amd64-v1.0.2.msi"
+  win_bisonw_binary_url         = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-windows-amd64-v1.0.2.zip"
+  mac_bisonw_installer_amd_url  = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-desktop-darwin-amd64-v1.0.2.dmg"
+  mac_bisonw_binary_amd_url     = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-darwin-amd64-v1.0.2.tar.gz"
+  mac_bisonw_installer_arm_url  = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-desktop-darwin-arm64-v1.0.2.dmg"
+  mac_bisonw_binary_arm_url     = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-darwin-arm64-v1.0.2.tar.gz"
+  lin_bisonw_binary_url         = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-linux-amd64-v1.0.2.tar.gz"
+  lin_bisonw_deb_url            = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-desktop-linux-amd64-v1.0.2.deb"
+  lin_bisonw_arm_url            = "https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-linux-arm-v1.0.2.tar.gz"
+
+  # Decrediton URLs
+  win_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v2.0.5/decrediton-windows-amd64-v2.0.5.exe"
+  mac_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v2.0.5/decrediton-darwin-amd64-v2.0.5.dmg"
+  m1_decrediton_url  = "https://github.com/decred/decred-binaries/releases/download/v2.0.5/decrediton-darwin-arm64-v2.0.5.dmg"
+  lin_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v2.0.5/decrediton-linux-amd64-v2.0.5.AppImage"
+  tar_decrediton_url = "https://github.com/decred/decred-binaries/releases/download/v2.0.5/decrediton-linux-amd64-v2.0.5.tar.gz"
+  dexreleases_url    = "https://github.com/decred/dcrdex/releases/tag/v1.0.2"
+  umbrel_community_app_store_url = "https://github.com/decred/umbrel-app-store"
+
+ coins = [
+  ["Decred", "decred-logo.svg"],
+  ["Bitcoin", "btc-logo.svg"],
+  ["Bitcoin Cash", "bch-logo.svg"],
+  ["Litecoin", "ltc-logo.svg"],
+  ["Zcash", "zec-logo.svg"],
+  ["Dogecoin", "doge-logo.svg"],
+  ["Ethereum", "eth-logo.svg"],
+  ["Polygon", "matic-logo.svg"],
+  ["USDC", "usdc-logo.svg"],
+  ["Tether", "usdt-logo.svg"],
+  ["Digibyte", "dgb-logo.svg"],
+  ["Firo", "firo-logo.svg"],
+  ["Dash", "dash-logo.svg"],
+  ["Zclassic", "zcl-logo.svg"]
+ ]
+
+ socials = [
+  ["Github", "iconGithub.svg", "https://github.com/decred/dcrdex"],
+  ["Reddit", "iconReddit.svg", "https://www.reddit.com/r/decred/"],
+  ["Twitter", "iconTwitter.svg", "https://twitter.com/decredproject"],
+  ["Matrix", "iconMatrix.svg", "https://chat.decred.org/#/room/#dex:decred.org"]
+ ]
+
+[menus]
+  [[menus.main]]
+    name = 'Download'
+    URL = '#download'
+    weight = 20
+  [[menus.main]]
+    name = 'About'
+    URL = '#about'
+    weight = 30
+
