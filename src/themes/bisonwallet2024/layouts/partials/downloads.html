@@ -31,23 +31,23 @@
                     <div class="btn-bg me-1 flex-grow-1 border-end">
                         <div class="mt-2">Intel / AMD64</div>
                         <a class="btn btn-primary mt-2"
-                            href="https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-desktop-darwin-amd64-v1.0.2.dmg"
+                            href="{{ $.Site.Params.mac_bisonw_installer_amd_url }}"
                             rel="noopener noreferrer">
                             Installer
                         </a>
                         <a class="btn btn-primary"
-                            href="https://github.com/decred/dcrdex/releases/download/v1.0.2/bisonw-darwin-amd64-v1.0.2.tar.gz"
+                            href="{{ $.Site.Params.mac_bisonw_binary_amd_url }}"
                             rel="noopener noreferrer">
                             Binary
                         </a>
                     </div>
                     <div class="btn-bg ms-1 flex-grow-1">
                         <div class="mt-2">Apple Silicon / ARM64</div>
-                        <a class="btn btn-primary mt-2" href="{{ $.Site.Params.mac_bisonw_installer_amd_url }}"
+                        <a class="btn btn-primary mt-2" href="{{ $.Site.Params.mac_bisonw_installer_arm_url }}"
                             rel="noopener noreferrer">
                             Installer
                         </a>
-                        <a class="btn btn-primary" href="{{ $.Site.Params.mac_bisonw_binary_amd_url }}"
+                        <a class="btn btn-primary" href="{{ $.Site.Params.mac_bisonw_binary_arm_url }}"
                             rel="noopener noreferrer">
                             Binary
                         </a>
@@ -58,7 +58,7 @@
         <div class="col">
             <div class="download glass m-2 p-2">
                 <div>
-                    <img src="https://dex.decred.org/images/linux-blue.svg">
+                    <img src="/images/linux-blue.svg">
                     <span>Linux&nbsp;x64</span>
                 </div>
 
