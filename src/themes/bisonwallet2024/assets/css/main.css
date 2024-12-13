@@ -53,7 +53,7 @@ a {
 
 .parallax {
   background-image: url('/images/download-dex-min.png');
-  height: 300px; /* Adjust as needed */
+  min-height: 300px; /* Adjust as needed */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
