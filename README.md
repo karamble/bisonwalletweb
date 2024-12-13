@@ -11,7 +11,8 @@ This is the code for the <https://bisonwallet.org> website.
 
 1. Start development web server
 
-    ```cd src
+    ```
+    cd src
     npm install
     hugo server -D --disableFastRender
     ```
