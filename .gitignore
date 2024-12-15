@@ -1,0 +1,5 @@
+src/resources
+src/public
+src/.hugo_build.lock
+src/package-lock.json
+src/node_modules
