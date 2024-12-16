@@ -1,14 +1,33 @@
 baseURL = "https://bisonwallet.org/"
 languageCode = "en-us"
-title = "BisonWallet"
 theme = "bisonwallet2024"
 relativeURLS = true
+
+# By default, hugo creates pages for the "category" and "tag" taxonomy. We don't
+# use these in dcrweb, so disableKinds will prevent them being created.
+disableKinds = ["taxonomy","term","rss", "404"]
 
 [module]
   [[module.mounts]]
     source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     target = "assets/js/bootstrap.bundle.min.js"
 
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = 'false'
+pluralizelisttitles = 'false'
+[languages]
+  [languages.en]
+    title = "Bison Wallet"
+    languageName = "English"
+    languageCode = 'en-EN'
+    languageDirection = 'ltr'
+    weight = 1
+  [languages.de]
+    title = "Bison Wallet | Dezentralisierter Exchange"
+    languageName = "Deutsch"
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    weight = 2
 
 [params]
   # Site image and description used to populate og tags.

@@ -4,7 +4,7 @@
             <a class="navbar-brand" href="https://bisonwallet.org">
                 <img src="/images/bw-logo.svg" class="logo" alt="{{ site.Title }}">
             </a>
-            <p class="mt-4">Bison Wallet currently supports trading pairs for:</p>
+            <p class="mt-4">{{ T "about_supportedcoins" }}</p>
             <div class="supported no-gutters">
                 <div class="row">
                     {{ range $.Site.Params.Coins }}
@@ -18,10 +18,8 @@
         </div>
 
         <div class="col-12 col-xs-12 col-sm-6 col-lg-6 glass p-5">
-            <h1>Find Out More</h1>
-            <p>Come and help make DCRDEX better, there are many ways to contribute. Join our growing community, where
-                you can connect with developers and other users, get information and ask questions. We can’t wait to
-                meet you! </p>
+            <h1>{{ T "about_findoutmore" }}</h1>
+            <p>{{ T "about_findoutmoretext" }}</p>
 
             <div class="row socials pt-2">
                 {{ range $.Site.Params.Socials }}

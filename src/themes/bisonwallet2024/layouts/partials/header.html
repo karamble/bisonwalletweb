@@ -1,10 +1,10 @@
 <div class="jumbotron jumbotron-fluid glowborder">
-  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  {{ partial "navbar.html" . }}
   <div class="container jumbocontent">
     <div class="row">
-      <h1 class="display-6 text-center">Multi-Coin Wallet, Decentralized Exchange, Staking Ready - Privacy Empowered.
+      <h1 class="display-6 text-center">{{ T "header_headline" }}
       </h1>
-      <p class="lead text-center">Bison Wallet is the only self-custodial multi-coin wallet with advanced features like an integrated DEX, market-making, staking, mixing and more, all build in.</p>
+      <p class="lead text-center">{{ T "header_headline2" }}</p>
     </div>
   </div>
 </div>

@@ -1,25 +1,12 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
-
 {{- with index site.Menus $menuID }}
-<nav class="navbar navbar-expand-md glass">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="https://bisonwallet.org">
-      <img src="/images/bw-logo.svg" class="logo" alt="{{ site.Title }}">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-      <ul class="navbar-nav">
+
 {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
 {{ range $.Site.menus.main }}
 	<a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
-    </ul>
-  </div>
-</nav>
+
 {{- end }}
 
 {{- define "partials/inline/menu/walk.html" }}
@@ -54,3 +41,5 @@
   {{- end }}
 {{- end }}
 
+  
+  
